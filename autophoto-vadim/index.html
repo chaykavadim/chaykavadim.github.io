@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чайка Вадим | Фотограф автомобилей</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- ШАПКА -->
+    <header class="header">
+        <div class="container">
+            <a href="#home" class="logo">
+                📸 Вадим Чайка
+            </a>
+            <nav class="nav">
+                <a href="#home">Главная</a>
+                <a href="#gallery">Портфолио</a>
+                <a href="#about">Обо мне</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ГЛАВНЫЙ СЛАЙДЕР -->
+    <section id="home" class="hero">
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+                <!-- Слайды добавляются через JavaScript -->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- КРАТКОЕ ПРИВЕТСТВИЕ -->
+    <section class="intro">
+        <div class="container">
+            <h1>Фотосъемка автомобилей</h1>
+            <p>Профессиональная съемка автомобилей с 4-летним опытом. Спорткары, классика, тюнинг, коммерческая съемка.</p>
+            <a href="#contact" class="btn">Заказать съемку</a>
+        </div>
+    </section>
+
+    <!-- ГАЛЕРЕЯ ПОРТФОЛИО -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Портфолио</h2>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="sports">Спорткары</button>
+                <button class="filter-btn" data-filter="classic">Классика</button>
+                <button class="filter-btn" data-filter="tuning">Тюнинг</button>
+            </div>
+            <div class="gallery-grid">
+                <!-- Галерея добавляется через JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- О ФОТОГРАФЕ -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Обо мне</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="images/about/vadim.jpg" alt="Чайка Вадим">
+                </div>
+                <div class="about-text">
+                    <h3>Чайка Вадим</h3>
+                    <p><strong>Фотограф автомобилей</strong> • 4 года опыта</p>
+                    <p>Специализируюсь на профессиональной съемке автомобилей. Работаю с естественным светом, нахожу идеальные локации для каждого авто.</p>
+                    <ul>
+                        <li>4+ года опыта в автомобильной фотографии</li>
+                        <li>Съемка спорткаров, классики, тюнинга</li>
+                        <li>Коммерческая съемка для автосалонов</li>
+                        <li>Быстрая обработка (3-7 дней)</li>
+                        <li>Работаю по всей России</li>
+                    </ul>
+                    <div class="contact-mini">
+                        <p><i class="fas fa-phone"></i> +7 (999) 777-77-77</p>
+                        <p><i class="fas fa-envelope"></i> chayka.vadim@list.ru</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Свяжитесь со мной</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <p>Телефон / WhatsApp</p>
+                            <a href="tel:+79997777777">+7 (999) 777-77-77</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p>Email</p>
+                            <a href="mailto:chayka.vadim@list.ru">chayka.vadim@list.ru</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p>Локация</p>
+                            <p>Санкт-Петербург</p>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <h3>Заявка на съемку</h3>
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="tel" placeholder="Телефон" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Марка автомобиля">
+                    <select>
+                        <option>Тип съемки</option>
+                        <option>Спорткары</option>
+                        <option>Классика</option>
+                        <option>Тюнинг</option>
+                        <option>Коммерческая</option>
+                    </select>
+                    <textarea placeholder="Дополнительная информация" rows="4"></textarea>
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">📸 Чайка Вадим</div>
+                <p>Фотограф автомобилей • 4 года опыта</p>
+                <div class="social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+            <p class="copyright">© 2023 Чайка Вадим. Фотограф автомобилей.</p>
+        </div>
+    </footer>
+
+    <!-- ЛАЙТБОКС -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
