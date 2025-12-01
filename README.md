@@ -1,1 +1,0 @@
-# chaykavadim.github.io
